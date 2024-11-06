@@ -168,17 +168,5 @@ scipy==1.11.3
 numpy==1.24.3
 ```
 
-
-## Licence
-
-Ce projet est sous licence MIT - voir le fichier [LICENSE.md](LICENSE.md) pour plus de détails.
-
-## Support
-
-Pour toute question ou problème :
-- 📧 Email : votre-email@exemple.com
-- 🐛 Issues : https://github.com/votre-username/assistant-agriculture/issues
-- 💬 Discussions : https://github.com/votre-username/assistant-agriculture/discussions
-
 ---
 Développé avec ❤️ pour soutenir l'agriculture locale
