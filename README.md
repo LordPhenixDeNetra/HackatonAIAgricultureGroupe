@@ -37,8 +37,9 @@ L'Assistant Virtuel d'Agriculture est une API intelligente qui combine la reconn
 
 1. Clonez le repository :
 ```bash
-git clone https://github.com/votre-username/assistant-agriculture.git
-cd assistant-agriculture
+git clone https://github.com/LordPhenixDeNetra/HackatonAIAgricultureGroupe
+
+cd HackatonAIAgricultureGroupe
 ```
 
 2. Créez un environnement virtuel :
@@ -167,13 +168,6 @@ scipy==1.11.3
 numpy==1.24.3
 ```
 
-## Contribution
-
-1. Fork le projet
-2. Créez votre branche de fonctionnalité (`git checkout -b feature/AmazingFeature`)
-3. Committez vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Push vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrez une Pull Request
 
 ## Licence
 
