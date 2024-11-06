@@ -1,0 +1,90 @@
+{
+    "info": {
+        "name": "API Assistant Virtuel Agriculture",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Health Check",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/health",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["health"]
+                }
+            }
+        },
+        {
+            "name": "Transcribe Audio",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/api/transcribe",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["api", "transcribe"]
+                },
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "file",
+                            "type": "file",
+                            "src": "/chemin/vers/votre/fichier.wav"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Record Audio",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:5000/api/record",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["api", "record"]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"duration\": 5\n}"
+                }
+            }
+        },
+        {
+            "name": "Query Nemotron",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:5000/api/query",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["api", "query"]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"prompt\": \"Quels sont les meilleurs moments pour planter du maïs?\",\n    \"temperature\": 0.7,\n    \"max_tokens\": 1024\n}"
+                }
+            }
+        }
+    ]
+}
